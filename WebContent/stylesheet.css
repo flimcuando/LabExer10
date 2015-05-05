@@ -1,0 +1,87 @@
+body
+{
+background: url('Bg.jpg') no-repeat scroll;
+            background-size: 100% 100%;
+            min-height: 700px;
+			overflow-y: hidden;	
+			overflow-x: hidden;
+}
+
+
+
+
+.car{
+position: absolute;
+z-index: 2;
+width:430px;
+height:430px;
+cursor: pointer;
+z-index: 2;
+border-radius:215px;
+top: 20%;
+left:60%;
+background: transparent;
+-webkit-animation: mymove 5s ;
+
+}
+
+
+#car {-webkit-animation-timing-function: ease-out;}
+
+@-webkit-keyframes mymove {
+    from {left: 0px;}
+    to {left: 799px;}
+}
+
+img 
+{
+width: 100%;
+height: 70%;
+
+border-radius: 20px;
+}
+
+h1
+{
+font-family: Stencil;
+font-size: 360%;
+line-height: 50%;
+margin-top: 2%;
+}
+h2
+{
+font-family: Georgia;
+font-size: 360%;
+line-height: 100%;
+margin-top: 12%;
+margin-left: -5%;
+}
+h3
+{
+font-family: Calibri;
+font-size: 120%;
+color: white;
+top: 10px;
+line-height: 10px;
+}
+
+.bot
+{
+position: absolute;
+z-index: 3;
+bottom: -10%;
+width:110.5%;
+height:25%;
+left: -10%
+}
+
+#arrow
+{
+position: absolute;
+z-index: 4;
+top: 26%;
+width:30%;
+height:25%;
+left: -38%;
+cursor: context-menu;
+}

@@ -1,0 +1,118 @@
+<! DOCTYPE html>
+<html>
+	<head>
+	<link type="text/css" rel="stylesheet" href="stylesheetServices.css"/>
+<script src="jquery-1.6.2.min.js"></script>
+<script src="jquery-ui-1.8.15.custom.min.js"></script>
+<link rel="stylesheet" href="jquery/jqueryCalendar.css">
+<script>
+                jQuery(function() {
+                                jQuery( "#inf_custom_someDateField" ).datepicker();
+                                jQuery( "#inf_custom_someDataField" ).datepicker();
+                });
+                </script>
+  
+  
+  
+<script type="text/javascript">
+	function validate()
+	{
+		var name = document.myform.name.value;
+		var contact = document.myform.contact.value;
+		var plate = document.myform.plate.value;
+		var place = document.myform.place.value;
+	
+		if(name==null || name=="")
+		{
+			alert("Please enter a name!");
+			return false;
+		}
+		if(contact==null || contact=="" || contact.length!=11 )
+		{
+			alert("Please enter a valid 11-digit cellphone number!");
+			return false;
+		}
+		if(plate==null || plate=="")
+		{
+		alert("Please enter a plate number with 3 letters and 3 numbers!");
+			return false;
+		}
+		if(place==null || place=="")
+	{
+		alert("Please a place where you want to park!");
+		return false;
+		}
+	}
+	</script>
+		
+		<title>PARKING 24/7</title>
+		</head>
+	
+	<body>
+		
+		<div class= "main">
+		
+		<h1> <b>  PARKING 24 hours </b> </h1>
+		<h3>  THE LEADER IN PROFESSIONAL PARKING SYSTEM </h3>
+		<h3> <b>   Welcome! </b> </h3>
+			<h4> <a href="login.html"> Login </a>  &nbsp;&nbsp; / &nbsp;&nbsp; <a href="register.html"> Register </a> </h4>
+		</div>
+		<div id="center">
+				<!--<div id="img">
+					<a href="menu.html">
+						<img src="home.jpg" id="icon" />
+					</a>
+				</div>
+			<div id="img">
+					<a href="menu.html">
+						<img src="About (Light Blue).jpg" id="icon" />
+					</a>
+				</div>-->
+				<div id="img">
+					<a href="menu.html">
+						<img src="home.jpg" id="icon" />
+					</a>
+				</div>
+				<!--<div id="img">
+					<a href="Contact.html">
+						<img src="Contact (Orange).jpg" id="icon" />
+					</a>
+				</div>
+				<div id="img">
+					<a href="clients.html">
+						<img src="clients.jpg" id="icon" />
+					</a>
+				</div>	-->
+				<div id="find">
+				<h3> &nbsp;&nbsp;Find your perfect parking space! </h3>
+					<form name="myform" onsubmit="return validate()">
+						&nbsp;&nbsp;&nbsp;&nbsp; NAME: <input name="name" type="text" style="font-size: 20px; width: 50%; height:5.5%;"/> <br/><br/>
+						&nbsp;&nbsp;&nbsp;&nbsp; CONTACT NO.: <input name="contact" type="text" style="font-size: 20px;height:5.5%;" /> <br/><br/>
+						&nbsp;&nbsp;&nbsp;&nbsp; PLATE NUMBER: <input name="plate" type="text" style="font-size: 20px; height:5.5%;"/> <br/><br/>
+						&nbsp;&nbsp;&nbsp;&nbsp; WHERE DO YOU WANT TO PARK?:
+						<br/>
+						&nbsp;&nbsp;&nbsp;&nbsp;<input name="place" type="text" value="" style="font-size: 20px;width: 300px; height:5.5%;"/><br/><br/>
+						&nbsp;&nbsp;&nbsp;&nbsp; DATE FROM: <input id="inf_custom_someDateField" type="text" value="" style="font-size: 20px;width: 20%; cursor:pointer" id="departing"/>
+						&nbsp;&nbsp;&nbsp;&nbsp; DATE UNTIL:  <input id="inf_custom_someDataField" type="text" value="" style="font-size: 20px;width: 20%;cursor:pointer" id="returning"/><br/><br/>
+						&nbsp;&nbsp;&nbsp;&nbsp; TIME-IN: <input data-format="hh:mm" id="time" type="text" value="12:00 am" style="font-size: 20px;width: 15%; height:5.5%;" /><br/><br/>
+			
+						
+						&nbsp;&nbsp;&nbsp;&nbsp;  <input type="submit" value="BOOK" style="width: 25%; height: 10%; font-size: 20px;" />
+						
+					</form>
+				</div>
+				<div id="park">
+				<img src="park.jpg" id="map"/>
+				</div>
+			</div>
+		
+		
+		
+		
+		
+	</body>
+		
+<script type="text/javascript">
+alert("You need to fill up the necessary boxes sequentially");
+</script>
+</html>

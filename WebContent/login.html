@@ -1,0 +1,89 @@
+<! DOCTYPE html>
+<html>
+	<head>
+	<link type="text/css" rel="stylesheet" href="stylesheetServices.css"/>
+
+<script type="text/javascript">
+	function validate()
+	{
+		var name = document.myform.name.value;
+		var pword = document.myform.pword.value;
+		
+		if(name==null || name=="")
+		{
+			alert("Please enter a name!");
+			return false;
+		}
+		else if(pword==null || pword=="")
+		{
+			alert("Please enter a password!");
+			return false;
+		}
+		else if(pword.length<7)
+		{
+			alert("Password must be at least 7 characters!");
+			return false;
+		}
+	}	
+	</script>
+		
+		<title>PARKING 24/7</title>
+		</head>
+	
+	<body>
+		
+		<div class= "main">
+		
+		<h1> <b>  PARKING 24 hours </b> </h1>
+		<h3>  THE LEADER IN PROFESSIONAL PARKING SYSTEM </h3>
+		<h3> <b>   Welcome! </b> </h3>
+			<h4> <a href="login.html"> Login </a>  &nbsp;&nbsp; / &nbsp;&nbsp; <a href="register.html"> Register </a> </h4>
+		</div>
+		<div id="center">
+				<div id="img">
+					<a href="menu.html">
+						<img src="home.jpg" id="icon" />
+					</a>
+				</div>
+			<!-- <div id="img">
+					<a href="menu.html">
+						<img src="About (Light Blue).jpg" id="icon" />
+					</a>
+				</div>-->
+				<!-- <div id="img">
+					<a href="menu.html">
+						<img src="services2.jpg" id="icon" />
+					</a>
+				</div>-->
+				<!--<div id="img">
+					<a href="Contact.html">
+						<img src="Contact (Orange).jpg" id="icon" />
+					</a>
+				</div>
+				<div id="img">
+					<a href="clients.html">
+						<img src="clients.jpg" id="icon" />
+					</a>
+				</div>	-->
+				<div id="find1">
+				<h3> &nbsp;&nbsp;WELCOME CLIENT! </h3>
+					<form action="Login" method="post" name="Login" onsubmit="return validate()"><br><br><br><br><br><br><br><br>
+						 <h3 id="us">USERNAME:</h3> <input name="name" id="uname"type="text" /> <br>
+						 <h3 id="p">PASSWORD:</h3> <input name="pword" id="pw" type="password"/> <br/><br/>
+						&nbsp;&nbsp;&nbsp;&nbsp;  <input id="sub" type="submit" value="Login"  />
+						
+					</form>
+				</div>
+				
+			</div>
+		
+		
+		
+		
+		
+	</body>
+		
+<script type="text/javascript">
+alert("You need to fill up the necessary boxes sequentially");
+</script>
+</html>

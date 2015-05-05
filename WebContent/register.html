@@ -1,0 +1,133 @@
+<! DOCTYPE html>
+<html>
+	<head>
+	<link type="text/css" rel="stylesheet" href="stylesheetServices.css"/>
+
+<script type="text/javascript">
+	function validate()
+	{
+		var name = document.myform.name.value;
+		var age = document.myform.age.value;
+		var occupation = document.myform.occupation.value;
+		var address = document.myform.address.value;
+		
+		var emailad = document.myform.emailad.value;
+		var cpnum = document.myform.cpnum.value;
+		var platenum = document.myform.platenum.value;
+		if(name==null || name=="")
+		{
+			alert("Please enter a name!");
+			return false;
+		}
+		else if(username==null || username == "")
+		{
+
+			alert("Please your username!");
+			return false;
+			
+		}
+		else if(password==null || password == "")
+		{
+
+			alert("Please your password!");
+			return false;
+			
+		}
+		else if(address==null || address == "")
+		{
+
+			alert("Please enter an address!");
+			return false;
+			
+		}
+		else	if(emailad==null || emailad == "")
+		{
+
+			alert("Please enter an email address!");
+			return false;
+			
+		}
+		else if(isNan(cpnum) || cpnum.length!=11)
+		{
+			alert("Pleade enter a valid 11-digit cellphone number!");
+			return false;
+		}
+		
+		
+		else if(platenum==null || platenum == "")
+		{
+
+			alert("Please enter a valid 3 letter and 3 digit plate number!");
+			return false;
+			
+		}
+		
+	}	
+	</script>
+		
+		<title>PARKING 24/7</title>
+		</head>
+	
+	<body>
+		
+		<div class= "main">
+		
+		<h1> <b>  PARKING 24 hours </b> </h1>
+		<h3>  THE LEADER IN PROFESSIONAL PARKING SYSTEM </h3>
+		<h3> <b>   Welcome! </b> </h3>
+			<h4> <a href="menu.html"> Login </a>  &nbsp;&nbsp; / &nbsp;&nbsp; <a href="menu.html"> Register </a> </h4>
+		</div>
+		<div id="center">
+				<div id="img">
+					<a href="menu.html">
+						<img src="home.jpg" id="icon" />
+					</a>
+				</div>
+			<!-- <div id="img">
+					<a href="menu.html">
+						<img src="About (Light Blue).jpg" id="icon" />
+					</a>
+				</div>-->
+				<!-- <div id="img">
+					<a href="menu.html">
+						<img src="services2.jpg" id="icon" />
+					</a>
+				</div>-->
+				<!--<div id="img">
+					<a href="Contact.html">
+						<img src="Contact (Orange).jpg" id="icon" />
+					</a>
+				</div>
+				<div id="img">
+					<a href="clients.html">
+						<img src="clients.jpg" id="icon" />
+					</a>
+				</div>	-->
+				<div id="find1">
+				<h3> &nbsp;&nbsp;WELCOME CLIENT! </h3>
+					<form action="Signup" name="myform" onsubmit="return validate()"><br>
+						 <h3 id="nreg">NAME(SN, FN, MN) :</h3> <input name="name" id="namereg"type="text"/> <br>
+						 <h3 id="nreg">USERNAME :</h3> <input name="username" id="preg" type="text"/><br>
+						  <h3 id="nreg">PASSWORD :</h3> <input name="password" id="oreg" type="password"/><br>
+						   <h3 id="nreg">ADDRESS :</h3> <input name="address" id="areg" type="text"/> <br>
+						    <h3 id="nreg">EMAIL ADDRESS :</h3> <input name="emailad" id="ereg" type="text"/><br> 
+						     <h3 id="nreg">CELLPHONE NO. :</h3> <input name="cpnum" id="creg" type="text"/><br>
+						      <h3 id="nreg">PLATE NO./S :</h3> <input name="platenum" id="plreg" type="text"/><br>
+						     
+						&nbsp;&nbsp;&nbsp;&nbsp;  <input id="sub1" type="submit" value="Login"  />
+						
+					</form>
+				</div>
+				
+			</div>
+		
+		
+		
+		
+		
+	</body>
+		
+<script type="text/javascript">
+alert("You need to fill up the necessary boxes sequentially");
+</script>
+</html>
